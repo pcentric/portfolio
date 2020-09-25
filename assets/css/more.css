@@ -1,0 +1,134 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap");
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(to bottom left, #55213f 100%, #332f2f 100%);
+}
+
+.main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.main > h1 {
+  font-size: 44px;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.butnn {
+  display: grid;
+  place-content: center;
+}
+.btn {
+  color: #000000;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: grid;
+  place-content: center;
+  width: max-content;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 5px 5px 0px 1px rgb(0, 0, 0);
+  transition: ease-in-out 0.3s;
+  font-family: "Balsamiq Sans", cursive;
+
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  box-shadow: none;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+
+  height: 100%;
+  background: linear-gradient(to bottom left, #55213f 40%, #332f2f 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Balsamiq Sans", cursive;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: 200;
+}
+.made_by {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
